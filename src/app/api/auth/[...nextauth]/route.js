@@ -6,6 +6,7 @@ export const authOption = {
   providers: [
     CredentialsProvider({
       name: "Credentials",
+
       async authorize(credential) {
         const userData = {
           email: credential?.email,
@@ -22,12 +23,9 @@ export const authOption = {
     }),
   ],
 
-  // Only the path here, no function!
   pages: {
     signIn: "/login",
   },
-
-  secret: process.env.NEXTAUTH_SECRET,
 
   session: {
     strategy: "jwt",
@@ -45,4 +43,5 @@ export const authOption = {
 };
 
 const handler = NextAuth(authOption);
+
 export { handler as GET, handler as POST };
