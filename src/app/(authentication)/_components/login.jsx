@@ -102,7 +102,7 @@ export default function LoginComponent() {
       </div>
 
       {/* sign in with google */}
-      <div className=" bg-ghost-white rounded-lg text-center">
+      {/* <div className=" bg-ghost-white rounded-lg text-center">
 
         <Button
           type="button"
@@ -111,7 +111,7 @@ export default function LoginComponent() {
         >
           <img src="/Google Icon.svg" alt="google icon" /> Login with google
         </Button>
-      </div>
+      </div> */}
     </form>
   );
 }
